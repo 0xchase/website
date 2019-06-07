@@ -1,0 +1,26 @@
+Layout:
+
+CSEC:
+ - RPI
+ - APIs
+ - Tiny
+ - Hard challenges writeups
+ - Angr scripts
+ - Crypto script
+
+Phy:
+ - ARTIQ
+ - Presentism paper
+ - Griffiths/MIT Quantum solutions
+
+VR:
+ - MPLEX
+ - Mars/Venus/etc VR experience
+ - Re-create MPLEX environments
+ - Skills table - software, etc
+
+Phil:
+ - Views
+ - Reading list
+ - 
+
