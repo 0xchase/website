@@ -3,6 +3,8 @@ Layout:
 CSEC:
  - RPI
  - APIs
+ - FlareOn CTF writeup
+ - PwnIsland3 writeup
  - Tiny
  - Hard challenges writeups
  - Angr scripts
@@ -19,8 +21,17 @@ VR:
  - Re-create MPLEX environments
  - Skills table - software, etc
 
+AI:
+ - Some basic keras project
+ - Neural decompilation, etc
+
 Phil:
  - Views
  - Reading list
  - 
+
+Music:
+ - Resources: Software, hardware, insturments
+ - Demos: Coming soon
+
 
