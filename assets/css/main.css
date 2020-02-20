@@ -2021,7 +2021,7 @@
 		.button.special {
 			box-shadow: none;
 			background-color: #285367;
-			color: #ffffff !important;
+			color: #bababa !important; /* Blue button text color */
 		}
 
 			input[type="submit"].special:hover,
