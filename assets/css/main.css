@@ -1637,7 +1637,8 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */ /* chasehere: master font */
+		font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.65;
