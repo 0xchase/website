@@ -1632,7 +1632,7 @@
 /* Type */
 
 	body {
-		background-color: #111111; /* chasehere: Far background color */
+		background-color: #222222; /* chasehere: Far background color */
 		color: #b7b7b7;
 	}
 
@@ -2818,11 +2818,11 @@
 	}
 
 	ul.grid-icons {
-		border-color: #131313; /* chasehere: gridicon border color */
+		border-color: #2a2a2a; /* chasehere: gridicon border color */
 	}
 
 		ul.grid-icons li {
-			border-color: #131313; /* chasehere: gridicon center border color */
+			border-color: #2a2a2a; /* chasehere: gridicon center border color */
 		}
 
 	ul.faces li {
@@ -2834,7 +2834,7 @@
 	}
 
 	ul.joined-icons li {
-		border-color: #232323; /* chasehere: joined icons border color */
+		border-color: #2a2a2a; /* chasehere: joined icons border color */
 	}
 
 		ul.joined-icons li a {
@@ -4203,7 +4203,7 @@
 /* Main */
 
 	#main {
-		background-color: #191919; /* chasehere: Center block background color*/
+		background-color: #2a2a2a; /* chasehere: Center block background color*/
 		border-radius: 0.5em;
 		margin: 0 auto;
 		width: 70em;
