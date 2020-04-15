@@ -2,15 +2,19 @@
 
 import os
 
+os.system("rm cybersecurity.html")
+
 os.system("ls malware-reports/* > temp.txt")
 
 files = ""
 with open("temp.txt", "r") as f:
     files = f.read().split("\n")
+os.system("rm temp.txt")
 
 html1 = ""
 html2 = ""
-with open("cybersecurity.html", "r") as f:
+
+with open("skeletons/cybersecurity.html", "r") as f:
     html1 = f.read()
 
 tabledata = ""
@@ -46,7 +50,6 @@ for line in html1.split("\n"):
     else:
         html2 += line + "\n"
 
-print(html2)
 with open("temp.html", "w") as f:
     f.write(html2)
 
