@@ -1,1 +1,2 @@
-malware-reports/webpage.html
+malware-reports/malware1.html
+malware-reports/malware2.html
