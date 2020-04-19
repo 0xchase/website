@@ -3,59 +3,60 @@
 import os
 
 def main():
+    os.system("rm -r reports")
+    os.system("mkdir reports")
+
     generateMalwareTable()
 
 def generateMalwareTable():
-    os.system("rm cybersecurity.html")
-    os.system("ls malware-reports/* > temp.txt")
+    text = []
+    with open("reverseengineering.html") as f:
+        text = f.read().split("\n")
 
-    files = ""
-    with open("temp.txt", "r") as f:
-        files = f.read().split("\n")
-    os.system("rm temp.txt")
+    os.system("ls ~/github/malware-reports/ | grep -v README | grep -v scripts > temp")
 
-    html1 = ""
-    html2 = ""
+    output = []
+    tables = []
+    with open("temp", "r") as f:
+        tables = f.read().split("\n")
+    tables = tables[:-1]
 
-    with open("skeletons/cybersecurity.html", "r") as f:
-        html1 = f.read()
+    for title in tables:
+        output.append("""<h3>""" + title.replace("-", " ") + """</h3><div class="table-wrapper"><table><thead><tr><th>Sample Name</th><th>Writeup</th></tr></thead><tbody>""")
 
-    tabledata = ""
-    for f in files:
-        name = f.split("/")[-1]
-        tabledata += """
-                                <tr>
-                                    <td>""" + name + """</td>
-                                    <td><a href=" """ + f + """ " target="_blank">""" + name + """</a></td>
-                            </tr>
-    """
+        os.system("ls ~/github/malware-reports/" + title + " > temp")
 
+        reports = []
+        with open("temp", "r") as f:
+            reports = f.read().split("\n")
+        reports = reports[:-1]
 
-    table = """
-    <h3>Malware Analysis</h3>
-    <div class="table-wrapper">
-            <table>
-                    <thead>
-                            <tr>
-                                    <th>Sample</th>
-                                    <th>Writeup</th>
-                            </tr>
-                    </thead>
-                    <tbody>
-                    """ + tabledata + """
-                    </tbody>
-            </table>
-    </div>
-    """
-    for line in html1.split("\n"):
-        if "Malware Table" in line:
-            html2 += table
+        for report in reports:
+            os.system("cp ~/github/malware-reports/" + title + "/" + report + " reports/" + report)
+            output.append("""<tr><td>""" + report.replace(".html", "") + """</td><td><a href=" """ + "reports/" + report + """" target="_blank">""" + report.replace(".html", "") + " Writeup" + """</a></td></tr>""")
+
+        output.append("""</tbody></table></div>\n\n""")
+
+    final = ""
+    shouldAdd = True
+    for line in text:
+        if "Malware Table Start" in line:
+            shouldAdd = False
+            final += line + "\n"
+            final += "\n".join(output)
+
+        elif "Malware Table End" in line:
+            shouldAdd = True
+            final += line + "\n"
         else:
-            html2 += line + "\n"
+            if shouldAdd == True:
+                final += line + "\n"
 
     with open("temp.html", "w") as f:
-        f.write(html2)
+        f.write(final)
+    
+    os.system("mv temp.html reverseengineering.html")
 
-    os.system("mv temp.html cybersecurity.html")
+    os.system("rm temp")
 
 main()
