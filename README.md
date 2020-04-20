@@ -1,35 +1,24 @@
 # Web
-
-Cyber:
- - Writeups for RE and Binary Exploitation
- - CTF tools pages
- - Reading list
- - Tiny disassembler
- - RingZer0 page. Contains decription and link to RingZer0 profile.
- - Reverse engineering course content (challenges and videos)
-
-VR Page:
- - Add apocalypse map
- - Add 3D models
- - Add logos for known software (UE4, Substance, Maya, GIMP)
- - Add particle effects section
- - Add video at the beginning with shots of maps
- - 360 youtube video of portfolio
- - Link to MPLEX stuff
- - VR Mars experience (360 youtube video)
- - Section for research and procedural tools (put this on AI page)
- - Link to artstation
-
-AI:
- - Section on each project (malware, music, etc)
+## Todo
+ - Partially automated writeups for practical malware analysis
+ - Post code for made up Windows system programming labs
+ - Post journey-into whitepapers
+ - CTF Tools: crypto, stego, pcap analyzer, tiny dissassembler
+ - Symbolic Execution: Modality and radare2-modality plugin pages
+ - Seperate pages Reverse Engineering, Symbolic Execution, and Cryptography
+ - Update website resume
 
 Physics:
- - Links to ARTIQ github
+ - Links to ARTIQ related github repos
  - Solutions to QM textbook problems (LATEX)
 
 Philosophy:
- - Views table
+ - Article: Problems for panpsychism
+ - Article: What relativity really says about presentism
+ - Article: Logical problems for the flow of time
+ - Book Reviews: Start writing these
  - Reading list: Favorite books and summary+review
+ - Link to philosophy club
 
 Music:
  - Embed spotify playlist
