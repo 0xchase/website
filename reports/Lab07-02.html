@@ -1,0 +1,161 @@
+
+    <!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chase Kanipe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Header -->
+			<div id="header" class="alt">
+				<a class="logo" href="../index.html"><strong>Chase</strong> Kanipe</a>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header>
+						<h1>pma7-2 Analysis</h1>
+					</header>
+
+				<!-- Content -->
+					<section id="content" class="wrapper">
+<p>
+<h2 id="executive-summary">Executive Summary</h2>
+<h3 id="installation">Installation</h3>
+<p>This malware is a standalone executable. It can be run in a variety of ways, including being dropped via a drive by download, manually installed on the computer, or acting as a payload for a worm.</p>
+<h3 id="behavior">Behavior</h3>
+<p>What the malware does goes here</p>
+<h3 id="persistence">Persistence</h3>
+<p>How the malware persists on the system goes here</p>
+<h3 id="removal">Removal</h3>
+<p>How the malware can be uninstalled goes here</p>
+<hr />
+<h3 id="file-information">File Information</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Filename</td>
+<td>Lab07-02.exe</td>
+</tr>
+<tr class="even">
+<td>File Size</td>
+<td>16384 bytes</td>
+</tr>
+<tr class="odd">
+<td>MD5</td>
+<td>7bbc691f7e87f0986a1030785268f190</td>
+</tr>
+<tr class="even">
+<td>SHA1</td>
+<td>8a55adee743d1124105d3acd688db621e3d8802f</td>
+</tr>
+<tr class="odd">
+<td>SHA256</td>
+<td>bdf941defbc52b03de3485a5eb1c97e64f5ac0f54325e8cb668c994d3d8c9c90</td>
+</tr>
+<tr class="even">
+<td>Architecture</td>
+<td>x86</td>
+</tr>
+<tr class="odd">
+<td>Compiler</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Statically linked</td>
+<td>False</td>
+</tr>
+<tr class="odd">
+<td>Stripped</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="strings">Strings</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Address</th>
+<th>String</th>
+<th>XRefs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0x403010</td>
+<td>http://www.malwareanalysisbook.com/ad.html</td>
+<td>COMFunction[5,1]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="imports">Imports</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Address</th>
+<th>Import</th>
+<th>XRefs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0x402048</td>
+<td>OleInitialize</td>
+<td>COMFunction[5,1]</td>
+</tr>
+<tr class="even">
+<td>0x40204c</td>
+<td>CoCreateInstance</td>
+<td>COMFunction[5,1]</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="important-functions">Important Functions</h3>
+<p><strong>COMFunction:</strong> undefined4 COMFunction<a href="void">5,1</a></p>
+<p>This is the main function that contains all the COM functionality. It opens the web browser and then exits.</p>
+<hr />
+<h2 id="analysis">Analysis</h2>
+<p>Answers to the PMA book questions are below. - This malware does not achieve persistence. It runs once and then exits. - This malware opens and ad and then exits. - This program will exit after displaying the ad.</p>
+
+</p>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<ul class="joined-icons">
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-gitlab"><span class="label">GitLab</span></a></li>
+					<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				</ul>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
+    
