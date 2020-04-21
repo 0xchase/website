@@ -31,7 +31,7 @@
 <h3 id="installation">Installation</h3>
 <p>This malware is a standalone executable. It might be dropped via a drive by download, manually installed on the computer, or act as a payload for a worm.</p>
 <h3 id="behavior">Behavior</h3>
-<p>What the malware does goes here</p>
+<p>This malware waits until january 1, 2100 and then attempts a DDOS attack on malwareanalysisbook.com</p>
 <h3 id="persistence">Persistence</h3>
 <p>The malware sets itself up as a service named MalService.</p>
 <h3 id="removal">Removal</h3>
@@ -132,6 +132,12 @@
 </table>
 <hr />
 <h3 id="important-functions">Important Functions</h3>
+<p><strong>main:</strong> void main(void)</p>
+<p>[00] -r-x section size 12288 named .text This is the main function. This calls the function that sets up persistence</p>
+<p><strong>SetupPersistence:</strong> undefined4 SetupPersistence<a href="void">12,2</a></p>
+<p>This function sets up the service, sets a timer to wait until the specified time, then starts 20 threads that perform the DDOS on the specified URL</p>
+<p><strong>InternetGetMalwareBook:</strong> void InternetGetMalwareBook(void)</p>
+<p>This function makes requests to malwareanalysisbook.com in an infinite loop</p>
 <hr />
 <h2 id="analysis">Analysis</h2>
 <p>Below are the answers to the PMA questions for this lab. This malware sets itself up as a service in the <code>fcn.00401040</code> function. It does so with the following system calls.</p>
