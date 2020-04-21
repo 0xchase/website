@@ -1,0 +1,201 @@
+
+    <!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chase Kanipe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Header -->
+			<div id="header" class="alt">
+				<a class="logo" href="../index.html"><strong>Chase</strong> Kanipe</a>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header>
+						<h1>pma7-3exe Analysis</h1>
+					</header>
+
+				<!-- Content -->
+					<section id="content" class="wrapper">
+<p>
+<h2 id="executive-summary">Executive Summary</h2>
+<h3 id="installation">Installation</h3>
+<p>This malware is a standalone executable that can be run in a variety of ways.</p>
+<h3 id="behavior">Behavior</h3>
+<p>This malware creates a backdoor that can recieve a number of commands. It is very difficult to remove.</p>
+<h3 id="persistence">Persistence</h3>
+<p>This malware alters every executable on the system to import the malware.</p>
+<h3 id="removal">Removal</h3>
+<p>You should probably throw away your hard drive if you run this malware. There is the signature kerne132.dll. There is also a mutex named SADFHUHF. One way to neutralize the malware is to replace kerne132.dll with something benign.</p>
+<hr />
+<h3 id="file-information">File Information</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Filename</td>
+<td>Lab07-03.exe</td>
+</tr>
+<tr class="even">
+<td>File Size</td>
+<td>16384 bytes</td>
+</tr>
+<tr class="odd">
+<td>MD5</td>
+<td>bd62dab79881bc6ec0f6be4eef1075bc</td>
+</tr>
+<tr class="even">
+<td>SHA1</td>
+<td>c2f24c592d0a8e0e6bcaff8710ac6cde7819d151</td>
+</tr>
+<tr class="odd">
+<td>SHA256</td>
+<td>3475ce2e4aaa555e5bbd0338641dd411c51615437a854c2cb24b4ca2c048791a</td>
+</tr>
+<tr class="even">
+<td>Architecture</td>
+<td>x86</td>
+</tr>
+<tr class="odd">
+<td>Compiler</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Statically linked</td>
+<td>False</td>
+</tr>
+<tr class="odd">
+<td>Stripped</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="strings">Strings</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Address</th>
+<th>String</th>
+<th>XRefs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0x40304c</td>
+<td>C:\windows\system32\kerne132.dll</td>
+<td>main</td>
+</tr>
+<tr class="even">
+<td>0x403070</td>
+<td>Kernel32.</td>
+<td>main</td>
+</tr>
+<tr class="odd">
+<td>0x40307c</td>
+<td>Lab07-03.dll</td>
+<td>main</td>
+</tr>
+<tr class="even">
+<td>0x40308c</td>
+<td>C:\Windows\System32\Kernel32.dll</td>
+<td>main</td>
+</tr>
+<tr class="odd">
+<td>0x4030b0</td>
+<td>WARNING_THIS_WILL_DESTROY_YOUR_MACHINE</td>
+<td>main</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="imports">Imports</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Address</th>
+<th>Import</th>
+<th>XRefs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0x40200c</td>
+<td>MapViewOfFile</td>
+<td>CreateFile[10,1,large], main</td>
+</tr>
+<tr class="even">
+<td>0x402014</td>
+<td>CreateFileA</td>
+<td>CreateFile[10,1,large], main</td>
+</tr>
+<tr class="odd">
+<td>0x402024</td>
+<td>CopyFileA</td>
+<td>main</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="important-functions">Important Functions</h3>
+<hr />
+<h2 id="analysis">Analysis</h2>
+<p>The main function contains the following calls.</p>
+<pre><code>0x004014ac call edi
+0x004014c3 call ebx
+0x004014d4 call ebp
+0x004014f0 call edi
+0x004014fd call dword [sym.imp.MSVCRT.dll_exit]
+0x0040150c call ebx
+0x00401515 call dword [sym.imp.MSVCRT.dll_exit]
+0x00401525 call ebp
+0x00401532 call dword [sym.imp.MSVCRT.dll_exit]
+0x00401547 call call_section..text fcn.00401040
+0x0040155d call call_section..text fcn.00401040
+0x0040156e call call_section..text fcn.00401040
+0x00401581 call call_section..text fcn.00401040
+0x00401597 call call_section..text fcn.00401040
+0x004015b0 call fcn.00401070[2,1] fcn.00401070[2,1]
+0x004016c1 call call_section..text fcn.00401040
+</code></pre>
+
+</p>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<ul class="joined-icons">
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-gitlab"><span class="label">GitLab</span></a></li>
+					<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				</ul>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
+    
