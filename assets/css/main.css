@@ -1,12 +1,10 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic");
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
-		font: inherit;
 		vertical-align: baseline;
 	}
 
@@ -1639,10 +1637,10 @@
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif; /* chasehere: master font */
 		/* font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; */
-		font-size: 14pt;
-		font-weight: 300;
+		font-size: 15pt;
+		font-weight: 400;
 		line-height: 1.65;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.02em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1697,10 +1695,19 @@
 
 	p {
 		margin: 0 0 2em 0;
+		font-size: 13pt; /* chasehere change font size */
+		font-weight: 300;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1 {
 		font-weight: 300;
+		line-height: 1.5;
+		margin: 0 0 0.7em 0;
+
+	}
+
+	h2, h3, h4, h5, h6 {
+		font-weight: 400;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
 	}
