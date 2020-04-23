@@ -4213,7 +4213,7 @@
 		background-color: #ffffff;
 		border-radius: 0.5em;
 		margin: 0 auto;
-		width: 70em;
+		width: 70em; /* chasehere center area size */
 		max-width: calc(100% - 4em);
 	}
 
