@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="data:image/png;base64,">
+<link rel="stylesheet" href="src/main.css"></link>
+<link rel="stylesheet" href="src/fontawesome.min.css">
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+<title>Chase Kanipe</title>
+
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="cybersecurity.html">Cybersecurity</a>
+    <a href="physics.html">Physics</a>
+    <a href="gamedesign.html">Game Design</a>
+    <a href="synthesizers.html">Synthesizers</a>
+    <a href="vsts.html">VSTs</a>
+    <a href="piano.html">Piano</a>
+    <a href="guitar.html">Guitar</a>
+    <a href="filmscoring.html">Film Scoring</a>
+    <a href="lockpicking.html">Lockpicking</a>
+    <a href="philosophy.html">Philosophy</a>
+  </div>
+<br><br>
+<div id="page-wrap">
+    <h1>Physics</h1>
+    <h2>About</h2>
+    <p>
+    I have been a research assistant at the <a href="http://www.brittonlab.umd.edu/" target="_blank">Britton lab</a> in the <a href="https://jqi.umd.edu/" target="_blank">Joint Quantum Institute</a> between the University of Maryland and NIST. I have experience with <a href="https://m-labs.hk/artiq/" target="_blank">ARTIQ</a> (Advanced Real-Time Infastructure for Quantum physics).
+    </p>
+</div>
+
+</body>
+</html>
+
+<script src="src/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+
+var ctx = document.getElementById('functionSizes').getContext('2d');
+var chart = new Chart(ctx, {
+// The type of chart we want to create
+type: 'line',
+
+// The data for our dataset
+data: {
+    labels: ['Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function', 'Function'],
+    datasets: [
+    {
+        label: 'Function Size (x1)',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        //data: [20, 10, 5, 2, 20, 30, 45, 0]
+        data: [59, 69, 78, 681, 111, 285, 177, 167, 128, 221, 381, 106, 38, 13, 89, 18, 46, 2082, 2567, 2283, 320, 343, 333, 204, 787]
+    },
+    {
+        label: 'Calls (x100)',
+        backgroundColor: 'rgb(99, 255, 132)',
+        borderColor: 'rgb(99, 255, 132)',
+        //data: [20, 10, 5, 2, 20, 30, 45, 0]
+        data: [38, 13, 89, 18, 46, 423, 243, 432, 320, 343, 555, 204, 787, 59, 69, 78, 222, 111, 285, 177, 167, 128, 221, 381, 106]
+    },
+    {
+        label: 'xRefs (x100)',
+        backgroundColor: 'rgb(132, 99, 255)',
+        borderColor: 'rgb(132, 99, 255)',
+        //data: [20, 10, 5, 2, 20, 30, 45, 0]
+        data: [111, 222, 333, 320, 343, 222, 204, 787, 59, 69, 78, 111, 111, 285, 177, 167, 128, 221, 111, 106, 38, 13, 89, 18, 46]
+    },
+    ]
+},
+
+// Configuration options go here
+options: {}
+});
+var ctx2 = document.getElementById('sectionSizes').getContext('2d');
+
+var myDoughnutChart = new Chart(ctx2, {
+    type: 'pie',
+    data: {
+    datasets: [{
+        data: [15, 30, 55],
+        backgroundColor: [
+            'rgb(132, 99, 255)',
+            'rgb(99, 255, 132)',
+            'rgb(255, 99, 132)',
+            'rgb(132, 99, 255)',
+            'rgb(99, 255, 132)',
+            'rgb(255, 99, 132)',
+        ],
+    }],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+        'LINKEDIT',
+        'DATA',
+        'TEXXT'
+    ]
+},
+    options: {}
+});
+</script>
+
+
+<!--
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+

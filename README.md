@@ -10,3 +10,12 @@ This is a new template for my website. It will be scratch coded using HTML and C
  - Colored hover highlighting???
  - Add page url icon at top corner of each page
  - Dark theme
+ - Less shadow on nav
+ - Add a mega menu for some nav elements
+ - Fonts more like old website
+ - Fade transitions throughout
+ - Generate pages from markdown files
+ - Menu semi-transparent
+ - Nav indicator like this: https://codepen.io/knyttneve/pen/LKrGBy
+ - Modern like this: https://templated.co/p/7300153616677876
+ - Modern like this: https://templated.co/p/1782153616677876
